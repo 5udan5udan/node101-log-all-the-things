@@ -17,7 +17,8 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.status(200).res.send("ok");
+  res.send("ok");
+  res.status(200);
 });
 
 app.get('/logs', (req, res) => {
